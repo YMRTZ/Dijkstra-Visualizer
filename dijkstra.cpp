@@ -9,7 +9,7 @@
 #include <vector>
 
 class node {
-  public:
+	public:
 	int x;
 	int y;
 	char type;
@@ -28,7 +28,7 @@ class node {
 };
 
 class nodeDistancePair {
-  public:
+	public:
 	int node;
 	int distance;
 	bool operator<(const nodeDistancePair &o) const {
@@ -42,7 +42,7 @@ class nodeDistancePair {
 using path = std::vector<int>;
 
 class platform {
-  public:
+	public:
 	int xLength;
 	int yLength;
 	std::vector<node> nodes;
@@ -205,8 +205,7 @@ int main() {
 		tileArray.back().setOutlineColor(sf::Color::Black);
 		if (charMap.nodes[i].type == 'S') {
 			tileArray.back().setFillColor(sf::Color::Red);
-		}
-		else if (charMap.nodes[i].type == 'E') {
+		} else if (charMap.nodes[i].type == 'E') {
 			tileArray.back().setFillColor(sf::Color::Green);
 		}
 
